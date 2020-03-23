@@ -12,11 +12,11 @@
             Positions of <span style="color: #580aff;">Responsibility</span>.
           </h1>
           <p class="font-weight-light mb-1" style="font-size: 24px;">
-            {{ workJson.responsibilityContent }}
+            {{ content.responsibilityContent }}
           </p>
         </v-flex>
 
-        <v-flex v-for="(item, i) in workJson.positions" :key="i" xs-6 style="padding-top: 40px; padding-bottom: 20px; text-align: left;">
+        <v-flex v-for="(item, i) in experience" :key="i" xs-6 style="padding-top: 40px; padding-bottom: 20px; text-align: left;">
           <h3 class="display-1 font-weight-light">
             {{ i+1 }}. {{ item.title }} @ <a style="text-decoration:none!important;" :name="item.name" target="_blank" :href="item.instituteURL"><span style="color: #580aff;">{{ item.institute }}</span></a>.
           </h3>
@@ -24,7 +24,7 @@
             {{ item.period }}
           </h1>
           <p class="font-weight-light mb-1 title">
-            {{ item.aboutPosition }}
+            {{ item.desc }}
           </p>
         </v-flex>
       </v-layout>
@@ -34,11 +34,18 @@
 </template>
 
 <script>
-import workDataJson from "../../assets/data/work.json";
+import { db } from '../../firebase'
 export default{
   data(){
     return {
-      workJson: workDataJson
+      content: '',
+      experience: ''
+    }
+  },
+  firestore(){
+    return {
+      content: db.collection("details").doc("content"),
+      experience: db.collection("experience")
     }
   }
 }

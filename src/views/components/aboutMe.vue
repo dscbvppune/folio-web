@@ -34,7 +34,7 @@
           </h1>
           <br><br>
           <p class="font-weight-light" style="font-size: 20px;">
-            {{ profileJson.aboutText }}
+            {{ content.aboutText }}
           </p>
           <br><br>
           <v-btn target="_blank" href="https://drive.google.com/open?id=1G0OYVzM6N1l0lMBHXw9b5J9AkhGohM_S" color="#580aff" style="margin-right: 12px!important; text-transform: capitalize; border-radius:5px; color:white">
@@ -52,11 +52,16 @@
 </template>
 
 <script>
-import profileDetailsJson from "../../assets/data/profile.json";
+import { db } from '../../firebase'
 export default{
   data(){
     return {
-      profileJson: profileDetailsJson
+      content: ''
+    }
+  },
+  firestore(){
+    return {
+      content: db.collection("details").doc("content")
     }
   }
 }
