@@ -37,11 +37,11 @@
             {{ content.aboutText }}
           </p>
           <br><br>
-          <v-btn target="_blank" href="https://drive.google.com/open?id=1G0OYVzM6N1l0lMBHXw9b5J9AkhGohM_S" color="#580aff" style="margin-right: 12px!important; text-transform: capitalize; border-radius:5px; color:white">
+          <v-btn target="_blank" v-if="details.resumeLink.length > 0" :href="details.resumeLink" color="#580aff" style="margin-right: 12px!important; text-transform: capitalize; border-radius:5px; color:white">
             My Resume
           </v-btn>
           &nbsp;
-          <v-btn target="_blank" href="https://github.com/dewanshrawat15" rounded outlined color="#580aff" style="margin-left: 12px!important; text-transform: capitalize; border-radius:5px; text-transform: capitalize;" dark>
+          <v-btn target="_blank" v-if="details.githubLink.length > 0" :href="details.githubLink" rounded outlined color="#580aff" style="margin-left: 12px!important; text-transform: capitalize; border-radius:5px; text-transform: capitalize;" dark>
             My Github
           </v-btn>
         </v-flex>
