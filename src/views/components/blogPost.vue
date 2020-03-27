@@ -57,7 +57,7 @@ export default{
   },
   firestore(){
       return {
-          blogContent: db.collection("blog").doc(this.$route.params.key)
+          blogContent: db.collection("blogs").doc(this.$route.params.key)
       }
   },
   filters: {

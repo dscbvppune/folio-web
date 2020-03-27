@@ -61,7 +61,7 @@ export default{
   },
   firestore(){
       return {
-          blogsList: db.collection("blog")
+          blogsList: db.collection("blogs")
       }
   },
   methods: {

@@ -9,8 +9,8 @@
           <center>
             <v-img
               style="border-radius: 100%;"
-              :src="require('@/assets/images/prof.webp')"
-              :lazy-src="require('@/assets/images/prof.webp')"
+              :src="details.profileImage"
+              :lazy-src="details.profileImage"
               
               width="400px">
               <v-layout

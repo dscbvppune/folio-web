@@ -49,7 +49,7 @@ export default{
   },
   firestore(){
     return {
-      workshops: db.collection("blog").where("workshop", '==', "true"),
+      workshops: db.collection("blogs").where("workshop", '==', "true"),
       content: db.collection("details").doc("content")
     }
   },

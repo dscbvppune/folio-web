@@ -10,8 +10,8 @@
           <center>
             <v-img
               style="border-radius: 100%;"
-              :src="require('@/assets/images/prof.webp')"
-              :lazy-src="require('@/assets/images/prof.webp')"
+              :src="details.profileImage"
+              :lazy-src="details.profileImage"
               width="500px"
             >
               <v-layout
@@ -56,12 +56,14 @@ import { db } from '../../firebase'
 export default{
   data(){
     return {
-      content: ''
+      content: '',
+      details: ''
     }
   },
   firestore(){
     return {
-      content: db.collection("details").doc("content")
+      content: db.collection("details").doc("content"),
+      details: db.collection("details").doc("details")
     }
   }
 }
