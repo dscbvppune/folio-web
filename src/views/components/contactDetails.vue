@@ -1,5 +1,5 @@
 <template>
-  <v-app class="contactDetails white">
+  <v-app class="contactDetails">
     <v-container>
       
       <v-layout

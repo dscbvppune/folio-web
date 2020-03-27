@@ -31,7 +31,7 @@
             {{ details.greeting }}
           </h1>
           <h1 class="display-2 font-weight-light mb-3">
-            This is <span style="color: #580aff;">{{this.details.name}}</span>.
+            This is <span :style="this.details.style">{{this.details.name}}</span>.
           </h1>
           <br>
           <div class="icon-row">
