@@ -23,10 +23,11 @@ This project aims at making websites easier to manage. We at DSC BVP Pune notice
 - Install extra dependencies: ```npm install``` or ```yarn```
 - Add the firebase configurations of your project [here](https://github.com/dscbvppune/folio-web/blob/master/src/firebase.js)
 - Open [manifest.json](https://github.com/dscbvppune/folio-web/blob/master/public/manifest.json) file and update personal details accordingly.
+- In the [public](https://github.com/dscbvppune/folio-web/tree/master/public) folder, add or update [192.png](https://github.com/dscbvppune/folio-web/blob/master/public/192.png), [512.png](https://github.com/dscbvppune/folio-web/blob/master/public/512.png) or [favicon.ico](https://github.com/dscbvppune/folio-web/blob/master/public/favicon.ico) files appropriately.
 - Open [index.html](https://github.com/dscbvppune/folio-web/blob/master/public/index.html) file and update:
   - meta description tag for search engines to display the given content
   - meta keywords tag for search engines to be able to rank the given page correctly
-  - Script tag for Google Analytics to be able to see correct analysis.
+  - Script tag for Google Analytics to be able to see correct analysis. To get your own Google Analytics tag, go to [Google Analytics](https://analytics.google.com/analytics/web) and follow the steps displayed.
 - For running website locally: ```npm run serve``` or ```yarn serve```
 - For the production: ```npm run build``` or ```yarn build``` and then a directory called ```dist``` will be created having the build files
 
