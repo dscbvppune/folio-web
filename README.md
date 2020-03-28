@@ -2,7 +2,7 @@
 ![Built with VueJS](https://img.shields.io/badge/vue-2.2.4-green.svg)
 ![Latest Commit](https://img.shields.io/github/last-commit/dscbvppune/folio-web?style=plastic)
 
-This project aims at making websites easier to manage. We at DSC BVP Pune noticed that many DSC's have outdated websites or do not even have an existing website. In order to solve this issue, we came up with a solution where maintainers could easily manage their websites using a mobile app. The template used has been referrenced by [@dewanshrawat15's](https://github.com/dewanshrawat15) [dewanshrawat15.github.io](https://github.com/dewanshrawat15/dewanshrawat15.github.io)
+This project aims at making websites easier to manage. We at DSC BVP Pune noticed that many students or professionals either don't have a website or face difficulty maintaining one. We came up with a solution to make it accesssible for everyone to be able to manage and build a website with the help of a mobile app. The template used has been referrenced by [@dewanshrawat15's](https://github.com/dewanshrawat15) [dewanshrawat15.github.io](https://github.com/dewanshrawat15/dewanshrawat15.github.io)
 
 ## Features
 - The Website is built completely using Vue.js, and the data is fetched from Firestore.
