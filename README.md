@@ -109,6 +109,16 @@ service firebase.storage {
 ```
 - Build and deploy by running: ```firebase deploy``` or ```npm run deploy``` or ```yarn deploy```
 
+
+## Contributors
+
+| Name              | Github username                                   | E-Mail                                                                |
+| ----------------- | ------------------------------------------------- | --------------------------------------------------------------------- |
+| Dewansh Rawat    | [dewanshrawat15](https://github.com/dewanshrawat15)| [dewanshrawat15@gmail.com](mailto:dewanshrawat15@gmail.com)       |
+| Aayushi Gupta    | [aayushigupt](https://github.com/aayushigupt)      | [aayushigupta108@gmail.com](mailto:aayushigupta108@gmail.com)      |
+| Nandini Sahni    | [nandinisahni](https://github.com/nandinisahni)    | [nandinisahni@gmail.com](mailto:nandinisahni@gmail.com)         |
+| Aastha Sharma    | [Aastha04](https://github.com/Aastha04)            | [s.frozenstar18@gmail.com](mailto:s.frozenstar18@gmail.com)       |
+
 ## Contributing
 Awesome! Contributions of all kinds are greatly appreciated. To help smoothen the process we have a few non-exhaustive guidelines to follow which should get you going in no time.
 
