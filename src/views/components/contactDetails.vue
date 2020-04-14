@@ -131,6 +131,11 @@ export default{
       content: ''
     }
   },
+  methods: {
+    convertToMail(email){
+      return "mailto:" + email
+    }
+  },
   firestore(){
     return {
       details: db.collection("details").doc("details"),
